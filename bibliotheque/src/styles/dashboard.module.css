@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 3em 5em;
+}
+
+.wrapper > * {
+  width: fit-content;
+}
+
+.profile {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.abonnement {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}

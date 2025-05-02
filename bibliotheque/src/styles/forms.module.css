@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  gap: 3em;
+  flex-wrap: wrap;
+  padding-inline: 3em;
+  padding-block: 3em 5em;
+  font-size: 1.2em;
+}
+
+.wrapper > li {
+  background-color: royalblue;
+  width: fit-content;
+  border-radius: 1em;
+  padding-block: 1em;
+  color: white;
+}
+
+.wrapper > li > * {
+  padding-inline: 1em;
+}
+

@@ -1,0 +1,88 @@
+.Search-container {
+    position: relative;
+    text-align: center;
+    max-width: 100%; /* Limite la largeur maximale du conteneur */
+    z-index: -1;
+}
+
+.Img-Mediatheque {
+    position: relative;
+    width: 100%;
+    height: auto; /* Permet à l'image de s'ajuster en hauteur */
+    max-height: 30vh; /* Limite la hauteur maximale de l'image */
+    overflow: hidden; /* Cache les parties de l'image qui dépassent */
+}
+
+.Img-Mediatheque img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre toujours le conteneur */
+}
+
+.Search-bar {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Largeur relative à l'image */
+    max-width: 800px; /* Largeur maximale */
+}
+
+.Search-select-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.Search-select {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.Selected-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    background-color: #fff;
+    z-index: 0;
+    width: 150px; /* Largeur fixe pour l'élément sélectionné */
+}
+
+.Selected-item i {
+    margin-right: 5px;
+}
+
+.Search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0;
+    outline: none;
+    flex: 1;
+}
+
+.Search-button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.Search-button img {
+    width: 20px;
+    height: 20px;
+}
